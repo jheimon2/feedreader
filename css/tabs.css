@@ -1,0 +1,41 @@
+.tabbar{
+	width:100%;
+	margin-bottom:2px;
+}
+.tabcontainer{
+	/*border:1px solid black;*/
+	
+	width:100%;
+	
+	position:relative;
+	overflow:auto;
+	
+}
+.tabselector{
+	cursor:pointer;
+	
+	padding:2px;
+	border:1px solid black;
+	background-color:#FE5;
+	border-radius:10px 0 0 0;
+	margin-right:-3px;
+}
+.tabselector:hover{
+	
+	
+	background-color:#B66;
+}
+.tabselector_tab{
+	display:none;
+	background-color:#ADD;
+}
+.selectedtab{
+	display:inherit;
+}
+.activetabselector{
+	border-bottom:0;
+	background-color:#ABB;
+}
+
+
+

@@ -1,0 +1,18 @@
+-5-
+
+-4-
+
+
+-3-
+-2-
+
+-1-
+
+-0-
+
+
+---------
+feedin listaus / siirtyminen fiksummin
+login toimimaan kunnolla + mahd antaa omat tunnarit
+yleinen popuphärpäke
+linkkien lisäys listaan => repostien esto ja tän nollaus

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="icon" type="image/gif" href="img/favicon.gif"/>
+
+<script language="javascript" src="js/include.js"></script>
+<script language="javascript" src="js/lib/jquery.js"></script>
+<!--<script src="http://jsconsole.com/remote.js?92990CD8-8315-4358-A7D1-FFD170F1D46D"></script>-->
+<!--<script language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery-min.js"></script>-->
+
+
+
+<title>test</title>
+</head>
+<body>
+
+<div id="togglesettings" class="defaultbg" onclick="toggleSettings()"></div>
+
+<div id="header"class ="controls">
+<div class ="contentInner">
+
+
+<div id="voting">
+<div id="addfav" onclick="window.main.addFavorite()"></div>
+<span id="score"></span>
+</div>
+
+
+<a href="#"id="title"></a>
+<a href="#" id="subreddit"></a>
+</div>
+</div>
+
+
+
+<div id="content"><div class="contentInner">
+
+
+<iframe id="prevpage" class="prevelem" src="">
+</iframe>
+<iframe id="prevcomments" class="prevelem"  src="">
+</iframe>
+
+
+<iframe id="page" class="curelem"  src="">
+</iframe>
+<iframe id="comments" class="curelem"  src="">
+</iframe>
+
+<iframe id="nextpage" class="nextelem"  src="">
+</iframe>
+<iframe id="nextcomments" class="nextelem"  src="">
+</iframe>
+
+
+
+</div></div>
+<a id="prev" title="prev" class ="controls" onclick="window.main.prev();"></a>
+<a id="refresh" class ="controls" onclick="window.main.reset();"></a>
+
+<a id="next" title="next" class ="controls" onclick="window.main.next();"></a>
+
+<div id="redditextras" class ="controls"> 
+	<a href="javascript:window.main.toggleComments();" id="toggleComments"></a>
+	<div class="wrapper votediv">
+		<a id="upvote" onclick="window.Reddit.vote(1)"></a>
+		<a id="downvote" onclick="window.Reddit.vote(-1)"></a>
+	</div>
+	<a id="redditlogin" onclick="window.Reddit.createLogin()">login</a>
+	
+</div>
+
+
+<div id="settings">
+	<a id="hidecontrols" class="button" onclick="toggleHideControls();">hide controls</a>
+	<a class="button" onclick="window.main.viewFavorites();">view favorites</a>
+	<a class="button" onclick="window.main.viewFeeds();">view feeds</a>
+
+</div>
+<script language="javascript">
+	//eka level
+	include(
+		[
+		//["//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery-min.js", function(){
+		//["js/lib/jquery.js", function(){
+			//include("js/agility.js");
+		//	console.log("miu");	
+		//}],
+		
+			"//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js",
+		
+			"//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"
+			
+		
+		
+		], function(){
+			//toka level
+			include([
+					"js/tools.js",
+					"js/lib/backbone.js",
+					"//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js",
+					"js/lib/jquery.jgfeed.js",
+					],function(){
+						//kolmas level
+						include("js/main.js");
+					}
+			);
+			
+		}
+	);
+		
+</script>
+
+</body>
+</html>

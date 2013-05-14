@@ -1,0 +1,28 @@
+.mainmenu{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:30px;
+  font-weight:bold;
+  font-size:25px;
+  background-color:#FF7B00;  
+}
+.menu{
+  position:absolute;
+  overflow:auto;
+  background-color:#FF5900;
+  z-index:666;
+}
+.selectedmi{
+  background-color:#FF5900;
+}
+.menuitem{
+  cursor:pointer;  
+}
+.opendown{
+  display:inline-block;
+}
+.hidemenu{
+  display:none;
+}
